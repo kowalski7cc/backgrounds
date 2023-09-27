@@ -1,7 +1,11 @@
 SUBDIRS = default
-VERSION = 1.0.0
+VERSION = 1.0.1
 BASE = kowalski7cc-backgrounds
 NAME =  $(BASE)-$(VERSION)
+BUILDDIR=$(shell rpm --eval '%_topdir')
+
+TAR=tar --exclude=.git --exclude=.gitkeep --exclude=dist --exclude=*.tar.xz -hcvzf
+RPMBUILD=rpmbuild -D "version $(VERSION)"
 
 all:
 	@for i in $(SUBDIRS) ; do \
@@ -14,23 +18,17 @@ install:
 	done;
 
 dist:
-	mkdir -p $(NAME)
-	cp -a CC-BY-SA-4.0 $(NAME)
-	cp -a Attribution $(NAME)
-	cp -a Makefile $(NAME)
-	cp -a COPYING $(NAME)
-	cp -a default $(NAME)
-	tar -c --xz -f $(NAME).tar.xz $(NAME)
-	rm -rf $(NAME)
+	[ -f $(NAME).tar.xz ] && rm $(NAME).tar.xz || true
+	$(TAR) $(NAME).tar.xz *
+
+copy:
+	
 
 clean:
-	@for i in $(SUBDIRS) ; do \
-		(cd $$i; $(MAKE) clean) ; \
-	done;
+	rm -rf $(NAME).tar.xz
 
-rpm:
-	# run dist, then rpmbuild
-	$(MAKE) dist
-	rpmbuild -ba $(BASE).spec --define "_sourcedir $(pwd)"
+rpm: dist
+	# rpmbuild -ba $(BASE).spec --define "_sourcedir $(pwd)"
+	$(RPMBUILD) -ta --clean --rmsource $(NAME).tar.xz
 
 .PHONY: all install dist clean rpm

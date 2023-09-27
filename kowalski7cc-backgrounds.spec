@@ -2,7 +2,7 @@
 %global bgname %(t="%{Bg_Name}";echo ${t,,})
 
 Name:           %{bgname}-backgrounds
-Version:        1.0.0
+Version:        %{version}
 Release:        %autorelease
 Summary:        Kowalski Dragon default desktop background
 
@@ -14,15 +14,10 @@ BuildArch:      noarch
 This package contains desktop backgrounds for the Kowalski Dragon default
 theme. Pulls in themes for GNOME desktop.
 
-
-
 %prep
-%autosetup -n %{name}-%{version}
-
 
 %build
 %make_build
-
 
 %install
 %make_install
