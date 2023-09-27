@@ -4,17 +4,18 @@
 Name:           %{bgname}-backgrounds
 Version:        %{version}
 Release:        %autorelease
-Summary:        Kowalski Dragon default desktop background
+Summary:        Kowalski Dragon desktop backgrounds
 
 License:        CC-BY-SA-4.0
 Source0:        %{name}-%{version}.tar.xz
 BuildArch:      noarch
 
 %description
-This package contains desktop backgrounds for the Kowalski Dragon default
+This package contains desktop backgrounds for the Kowalski Dragon
 theme. Pulls in themes for GNOME desktop.
 
 %prep
+%setup -q -c -n %{name}-%{version}
 
 %build
 %make_build
@@ -28,7 +29,6 @@ theme. Pulls in themes for GNOME desktop.
 %files
 %license COPYING Attribution
 %dir %{_datadir}/backgrounds/%{bgname}
-%dir %{_datadir}/backgrounds/%{bgname}/default
-%{_datadir}/backgrounds/%{bgname}/default/%{bgname}*.{webp,xml}
-%{_datadir}/gnome-background-properties/%{bgname}.xml
+%{_datadir}/backgrounds/%{bgname}/*
 %dir %{_datadir}/gnome-background-properties/
+%{_datadir}/gnome-background-properties/%{bgname}-*.xml

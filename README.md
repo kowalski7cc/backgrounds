@@ -1,18 +1,18 @@
 # kowalski7cc-backgrounds
 
-A set of default and supplemental wallpapers
+A set of wallpapers
 
 ## Wallpapers
 
-### default
+### teacher
 
 Light:
 
-![default-light](default/kowalski7cc-day.svg)
+![teacher-light](teacher/kowalski7cc-day.svg)
 
 Dark:
 
-![default-dark](default/kowalski7cc-night.svg)
+![teacher-dark](teacher/kowalski7cc-night.svg)
 
 ## Building
 

@@ -1,5 +1,5 @@
-SUBDIRS = default
-VERSION = 1.0.1
+SUBDIRS = teacher refsheet
+VERSION = 2.0.0
 BASE = kowalski7cc-backgrounds
 NAME =  $(BASE)-$(VERSION)
 BUILDDIR=$(shell rpm --eval '%_topdir')
@@ -19,7 +19,7 @@ install:
 
 dist:
 	[ -f $(NAME).tar.xz ] && rm $(NAME).tar.xz || true
-	$(TAR) $(NAME).tar.xz *
+	$(TAR) $(NAME).tar.xz Attribution Makefile README.md $(SUBDIRS) $(BASE).spec COPYING CC-BY-SA-4.0
 
 clean:
 	rm -rf $(NAME).tar.xz
