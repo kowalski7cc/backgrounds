@@ -21,14 +21,13 @@ dist:
 	[ -f $(NAME).tar.xz ] && rm $(NAME).tar.xz || true
 	$(TAR) $(NAME).tar.xz *
 
-copy:
-	
-
 clean:
 	rm -rf $(NAME).tar.xz
 
 rpm: dist
-	# rpmbuild -ba $(BASE).spec --define "_sourcedir $(pwd)"
 	$(RPMBUILD) -ta --clean --rmsource $(NAME).tar.xz
+
+srpm: dist
+	$(RPMBUILD) -ts --clean --rmsource $(NAME).tar.xz
 
 .PHONY: all install dist clean rpm
