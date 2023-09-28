@@ -4,15 +4,19 @@ A set of wallpapers
 
 ## Wallpapers
 
-### teacher
+### Teacher
 
 Light:
 
-![teacher-light](teacher/kowalski7cc-day.svg)
+![teacher-light](teacher/teacher-day.webp)
 
 Dark:
 
-![teacher-dark](teacher/kowalski7cc-night.svg)
+![teacher-dark](teacher/teacher-night.webp)
+
+### Refsheet
+
+![refsheet](refsheet/refsheet.webp)
 
 ## Building
 
