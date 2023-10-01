@@ -27,6 +27,9 @@ clean:
 rpm: dist
 	$(RPMBUILD) -ta --clean --rmsource $(NAME).tar.xz
 
+deb:
+	dpkg-buildpackage -A -rfakeroot
+
 srpm: dist
 	$(RPMBUILD) -ts --clean --rmsource $(NAME).tar.xz
 

@@ -1,0 +1,19 @@
+Source: kowalski7cc-backgrounds
+Section: unknown
+Priority: optional
+Maintainer: Kowalski Dragon <kowalski7cc@users.noreply.github.com>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.6.2
+Homepage: https://github.com/kowalski7cc/backgrounds
+Vcs-Browser: https://github.com/kowalski7cc/backgrounds
+Vcs-Git: https://github.com/kowalski7cc/backgrounds.git
+
+Package: kowalski7cc-backgrounds
+Architecture: all
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: This package contains desktop backgrounds for the Kowalski Dragon 
+ theme. Pulls in themes for GNOME desktop.
