@@ -9,6 +9,11 @@ CP=/bin/cp -p
 
 all:
 
+build:
+	for tod in day night; do \
+	  rsvg-convert -w 3840 -h 3840 -o $(WP_NAME)-$${tod}.png $(WP_NAME)-$${tod}.svg; \
+	done;
+
 install:
 	$(MKDIR) $(WP_DIR)/$(WP_NAME)
 	$(INSTALL) $(WP_NAME).xml $(WP_DIR)/$(WP_NAME)/$(WP_NAME).xml
