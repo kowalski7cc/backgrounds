@@ -19,7 +19,7 @@ install:
 	$(INSTALL) $(WP_NAME).xml $(WP_DIR)/$(WP_NAME)/$(WP_NAME).xml
 	#~ Base background
 	for tod in day night; do \
-	  $(INSTALL) $(WP_NAME)-$${tod}.webp $(WP_DIR)/$(WP_NAME)/$(WP_NAME)-$${tod}.webp ; \
+	  $(INSTALL) $(WP_NAME)-$${tod}.png $(WP_DIR)/$(WP_NAME)/$(WP_NAME)-$${tod}.png ; \
 	done;
 	
 	#~ GNOME background

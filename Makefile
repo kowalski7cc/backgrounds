@@ -1,5 +1,5 @@
 SUBDIRS = teacher refsheet
-VERSION = 2.0.0
+VERSION = 3.0.0
 BASE = kowalski7cc-backgrounds
 NAME =  $(BASE)-$(VERSION)
 BUILDDIR=$(shell rpm --eval '%_topdir')
@@ -10,6 +10,11 @@ RPMBUILD=rpmbuild -D "version $(VERSION)"
 all:
 	@for i in $(SUBDIRS) ; do \
 		(cd $$i; $(MAKE)) ;\
+	done;
+
+build:
+	@for i in $(SUBDIRS) ; do \
+		(cd $$i; $(MAKE) build) ;\
 	done;
 
 install:
@@ -33,4 +38,4 @@ deb:
 srpm: dist
 	$(RPMBUILD) -ts --clean --rmsource $(NAME).tar.xz
 
-.PHONY: all install dist clean rpm
+.PHONY: all build install dist clean rpm

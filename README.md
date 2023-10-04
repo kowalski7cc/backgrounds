@@ -8,11 +8,11 @@ A set of wallpapers
 
 Light:
 
-![teacher-light](teacher/teacher-day.webp)
+![teacher-light](teacher/teacher-day.png)
 
 Dark:
 
-![teacher-dark](teacher/teacher-night.webp)
+![teacher-dark](teacher/teacher-night.png)
 
 ### Refsheet
 
