@@ -4,19 +4,11 @@ A set of wallpapers
 
 ## Wallpapers
 
-### Teacher
-
-Light:
-
-![teacher-light](teacher/teacher-day.svg)
-
-Dark:
-
-![teacher-dark](teacher/teacher-night.svg)
-
-### Refsheet
-
-![refsheet](refsheet/refsheet.svg)
+- [Teacher](teacher/)
+  - Light
+  - Light/Dark
+  - Time of day
+- [Refsheet](refsheet/)
 
 ## Building
 
