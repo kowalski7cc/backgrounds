@@ -8,15 +8,15 @@ A set of wallpapers
 
 Light:
 
-![teacher-light](teacher/teacher-day.png)
+![teacher-light](teacher/teacher-day.svg)
 
 Dark:
 
-![teacher-dark](teacher/teacher-night.png)
+![teacher-dark](teacher/teacher-night.svg)
 
 ### Refsheet
 
-![refsheet](refsheet/refsheet.webp)
+![refsheet](refsheet/refsheet.svg)
 
 ## Building
 
