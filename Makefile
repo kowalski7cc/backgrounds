@@ -11,12 +11,7 @@ all:
 	@for i in $(SUBDIRS) ; do \
 		(cd $$i; $(MAKE)) ;\
 	done;
-
-build:
-	@for i in $(SUBDIRS) ; do \
-		(cd $$i; $(MAKE) build) ;\
-	done;
-
+	
 install:
 	@for i in $(SUBDIRS) ; do \
 		(cd $$i; $(MAKE) install) ; \

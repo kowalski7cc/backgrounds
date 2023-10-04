@@ -8,8 +8,6 @@ LN_S=/bin/ln -s<
 CP=/bin/cp -p
 
 all:
-
-build:
 	rsvg-convert -w 3840 -h 3840 -o $(WP_NAME).png $(WP_NAME).svg;
 
 install:

@@ -19,7 +19,6 @@ theme. Pulls in themes for GNOME desktop.
 
 %build
 %make_build
-make build %{?_smp_mflags}
 
 %install
 %make_install
