@@ -9,11 +9,17 @@ CP=/bin/cp -p
 
 all:
 
+build:
+	rsvg-convert -w 3840 -h 3840 -o $(WP_NAME).png $(WP_NAME).svg;
+
 install:
 	$(MKDIR) $(WP_DIR)/$(WP_NAME)
 	#~ Base background
-	$(INSTALL) $(WP_NAME).webp $(WP_DIR)/$(WP_NAME)/$(WP_NAME).webp ;
+	$(INSTALL) $(WP_NAME).png $(WP_DIR)/$(WP_NAME)/$(WP_NAME).png ;
 	
 	#~ GNOME background
 	$(MKDIR) $(GNOME_BG_DIR)
 	$(INSTALL) gnome-backgrounds-$(WP_NAME).xml $(GNOME_BG_DIR)/$(WP_PACKAGE)-$(WP_NAME).xml
+
+clean:
+	rm -f $(WP_NAME).png;

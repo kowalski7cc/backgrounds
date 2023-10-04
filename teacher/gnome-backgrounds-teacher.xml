@@ -2,9 +2,14 @@
 <!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
 <wallpapers>
   <wallpaper deleted="false">
+    <name>Kowalski Dragon Teacher Light</name>
+    <filename>/usr/share/backgrounds/kowalski7cc/teacher/teacher-day.png</filename>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper deleted="false">
     <name>Kowalski Dragon Teacher</name>
-    <filename>/usr/share/backgrounds/kowalski7cc/teacher/teacher-day.webp</filename>
-    <filename-dark>/usr/share/backgrounds/kowalski7cc/teacher/teacher-night.webp</filename-dark>
+    <filename>/usr/share/backgrounds/kowalski7cc/teacher/teacher-day.png</filename>
+    <filename-dark>/usr/share/backgrounds/kowalski7cc/teacher/teacher-night.png</filename-dark>
     <options>zoom</options>
   </wallpaper>
   <wallpaper deleted="false">

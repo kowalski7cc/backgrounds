@@ -4,19 +4,11 @@ A set of wallpapers
 
 ## Wallpapers
 
-### Teacher
-
-Light:
-
-![teacher-light](teacher/teacher-day.webp)
-
-Dark:
-
-![teacher-dark](teacher/teacher-night.webp)
-
-### Refsheet
-
-![refsheet](refsheet/refsheet.webp)
+- [Teacher](teacher/)
+  - Light
+  - Light/Dark
+  - Time of day
+- [Refsheet](refsheet/)
 
 ## Building
 

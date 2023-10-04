@@ -1,5 +1,5 @@
 SUBDIRS = teacher refsheet
-VERSION = 2.0.0
+VERSION = 3.0.0
 BASE = kowalski7cc-backgrounds
 NAME =  $(BASE)-$(VERSION)
 BUILDDIR=$(shell rpm --eval '%_topdir')
@@ -12,6 +12,11 @@ all:
 		(cd $$i; $(MAKE)) ;\
 	done;
 
+build:
+	@for i in $(SUBDIRS) ; do \
+		(cd $$i; $(MAKE) build) ;\
+	done;
+
 install:
 	@for i in $(SUBDIRS) ; do \
 		(cd $$i; $(MAKE) install) ; \
@@ -22,6 +27,9 @@ dist:
 	$(TAR) $(NAME).tar.xz Attribution Makefile README.md $(SUBDIRS) $(BASE).spec COPYING CC-BY-SA-4.0
 
 clean:
+	@for i in $(SUBDIRS) ; do \
+		(cd $$i; $(MAKE) clean) ; \
+	done;
 	rm -rf $(NAME).tar.xz
 
 rpm: dist
@@ -33,4 +41,4 @@ deb:
 srpm: dist
 	$(RPMBUILD) -ts --clean --rmsource $(NAME).tar.xz
 
-.PHONY: all install dist clean rpm
+.PHONY: all build install dist clean rpm
