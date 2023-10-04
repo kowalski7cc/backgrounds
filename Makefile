@@ -27,6 +27,9 @@ dist:
 	$(TAR) $(NAME).tar.xz Attribution Makefile README.md $(SUBDIRS) $(BASE).spec COPYING CC-BY-SA-4.0
 
 clean:
+	@for i in $(SUBDIRS) ; do \
+		(cd $$i; $(MAKE) clean) ; \
+	done;
 	rm -rf $(NAME).tar.xz
 
 rpm: dist

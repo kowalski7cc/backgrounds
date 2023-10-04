@@ -27,5 +27,5 @@
   </defs>
   <rect width="1920" height="1920" style="fill: url('#gradient-1'); fill-rule: nonzero;"/>
   <rect width="1920" height="356.459" style="paint-order: fill; fill-rule: nonzero; fill: url('#gradient-2-0');" y="1563.541"/>
-  <image width="1786.114" height="1413.231" x="66.943" style="filter: url('#drop-shadow-filter-0');" y="353.43" xlink:href="IMG_4715_waifu2x_noise2_scale4x.png"/>
+  <image width="1786.114" height="1413.231" x="66.943" style="filter: url('#drop-shadow-filter-0');" y="353.43" xlink:href="teacher.png"/>
 </svg>

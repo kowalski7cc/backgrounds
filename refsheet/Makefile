@@ -20,3 +20,6 @@ install:
 	#~ GNOME background
 	$(MKDIR) $(GNOME_BG_DIR)
 	$(INSTALL) gnome-backgrounds-$(WP_NAME).xml $(GNOME_BG_DIR)/$(WP_PACKAGE)-$(WP_NAME).xml
+
+clean:
+	rm -f $(WP_NAME).png;
