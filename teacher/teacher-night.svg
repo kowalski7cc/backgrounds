@@ -2,8 +2,8 @@
 <svg viewBox="0 0 1920 1920" style="shape-rendering: crispedges;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:bx="https://boxy-svg.com">
   <defs>
     <linearGradient gradientUnits="userSpaceOnUse" x1="960" y1="0" x2="960" y2="1080" id="gradient-1" spreadMethod="pad" gradientTransform="matrix(1, 0, 0, 1.09102, 0, 370.848973)">
-      <stop offset="0" style="stop-color: #5a7281"/>
-      <stop offset="1" style="stop-color: #3f4f5b"/>
+      <stop offset="0" style="stop-color: #556a78"/>
+      <stop offset="1" style="stop-color: #364558"/>
     </linearGradient>
     <filter id="drop-shadow-filter-0" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%" bx:preset="drop-shadow 1 50 10 10 0.5 rgba(0,0,0,0.3)">
       <title>Drop shadow</title>
@@ -21,11 +21,11 @@
     </filter>
     <linearGradient id="gradient-2-0" gradientUnits="userSpaceOnUse" x1="960" y1="1478.579" x2="960" y2="1759.821" gradientTransform="matrix(1, 0, 0, 1.267446, -0.000122, -310.477081)" xlink:href="#gradient-2"/>
     <linearGradient id="gradient-2">
-      <stop offset="0.408" style="stop-color: rgba(0, 0, 0, 0.29);"/>
-      <stop offset="1" style="stop-color: rgba(0, 0, 0, 0);"/>
+      <stop offset="0" style="stop-color: rgba(0, 0, 0, 0.243);"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 0.204);"/>
     </linearGradient>
   </defs>
   <rect width="1920" height="1920" style="fill: url('#gradient-1'); fill-rule: nonzero;"/>
-  <rect width="1920" height="356.459" style="paint-order: fill; fill-rule: nonzero; fill: url('#gradient-2-0');" y="1563.541"/>
+  <rect width="1920" height="356.459" style="paint-order: fill; fill-rule: nonzero; fill: url('#gradient-2-0'); filter: none;" y="1563.541"/>
   <image width="1786.114" height="1413.231" x="66.943" style="filter: url('#drop-shadow-filter-0');" y="353.43" xlink:href="teacher.png"/>
 </svg>
