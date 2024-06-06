@@ -7,7 +7,7 @@ Release:        1
 Summary:        Kowalski Dragon desktop backgrounds
 
 License:        CC-BY-SA-4.0
-Source0:        %{name}.tar.xz
+Source0:        %{name}-%{version}-%{release}.tar.xz
 BuildArch:      noarch
 BuildRequires:  librsvg2-tools
 

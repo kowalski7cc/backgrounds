@@ -35,6 +35,6 @@ deb:
 	dpkg-buildpackage -A -rfakeroot
 
 srpm: dist
-	$(RPMBUILD) -ts --clean --rmsource $(NAME).tar.xz
+	$(RPMBUILD) -ts --clean --rmsource dist/$(NAME)-$(VERSION).tar.xz
 
 .PHONY: all build install dist clean rpm
