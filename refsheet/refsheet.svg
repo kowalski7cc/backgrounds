@@ -17,5 +17,5 @@
   </defs>
   <rect x="-0.001" width="3840" height="3840" style="stroke: rgb(0, 0, 0); fill: rgb(58, 79, 131);"/>
   <rect width="3184.205" height="1710.623" style="fill: rgb(39, 52, 82);" x="327.898" y="1064.688"/>
-  <image width="3684.314" height="2016.211" y="911.894" style="filter: url('#drop-shadow-filter-0');" x="77.843" xlink:href="image.png"/>
+  <image width="3684.314" height="2016.211" y="911.894" style="filter: url('#drop-shadow-filter-0');" x="77.843" xlink:href="refsheet.png.in"/>
 </svg>

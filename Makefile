@@ -1,11 +1,10 @@
 SUBDIRS = teacher refsheet
-VERSION = 4.1.0
 BASE = kowalski7cc-backgrounds
-NAME =  $(BASE)-$(VERSION)
-BUILDDIR=$(shell rpm --eval '%_topdir')
-
-TAR=tar --exclude=.git --exclude=.gitkeep --exclude=dist --exclude=*.tar.xz -hcvzf
-RPMBUILD=rpmbuild -D "version $(VERSION)"
+VERSION = 4.1.0-1
+NAME = $(BASE)-$(VERSION)
+TAR=tar --exclude-vcs --exclude-vcs-ignores --exclude-backups -hcvzf
+RPMBUILD=rpmbuild
+DEBIAN_FILES=debian/control debian/changelog debian/rules debian/copyright
 
 all:
 	@for i in $(SUBDIRS) ; do \
@@ -19,7 +18,8 @@ install:
 
 dist:
 	[ -f $(NAME).tar.xz ] && rm $(NAME).tar.xz || true
-	$(TAR) $(NAME).tar.xz Attribution Makefile README.md $(SUBDIRS) $(BASE).spec COPYING CC-BY-SA-4.0
+	@mkdir -p dist
+	$(TAR) dist/$(NAME).tar.xz .
 
 clean:
 	@for i in $(SUBDIRS) ; do \
@@ -27,8 +27,9 @@ clean:
 	done;
 	rm -rf $(NAME).tar.xz
 
-rpm: dist
-	$(RPMBUILD) -ta --clean --rmsource $(NAME).tar.xz
+rpm:
+	@mkdir -p dist
+	$(RPMBUILD) -bb --build-in-place -D "_rpmdir ${PWD}/dist" ${BASE}.spec
 
 deb:
 	dpkg-buildpackage -A -rfakeroot

@@ -2,13 +2,14 @@
 %global bgname %(t="%{Bg_Name}";echo ${t,,})
 
 Name:           %{bgname}-backgrounds
-Version:        %{version}
-Release:        %autorelease
+Version:        4.1.0
+Release:        1
 Summary:        Kowalski Dragon desktop backgrounds
 
 License:        CC-BY-SA-4.0
-Source0:        %{name}-%{version}.tar.xz
+Source0:        %{name}.tar.xz
 BuildArch:      noarch
+BuildRequires:  librsvg2-tools
 
 %description
 This package contains desktop backgrounds for the Kowalski Dragon
@@ -32,5 +33,4 @@ theme. Pulls in themes for GNOME desktop.
 %{_datadir}/backgrounds/%{bgname}/*
 %dir %{_datadir}/gnome-background-properties/
 %{_datadir}/gnome-background-properties/%{bgname}-*.xml
-dir %{_datadir}/wallpapers/%{Bg_Name}_background_*/
-%{_datadir}/wallpapers/%{Bg_Name}_background_*/*\
+%{_datadir}/wallpapers/%{Bg_Name}_background_*/

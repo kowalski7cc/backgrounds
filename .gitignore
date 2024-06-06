@@ -387,20 +387,12 @@ $RECYCLE.BIN/
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
+debian/*
+!debian/rules
+!debian/changelog
+!debian/copyright
+!debian/control
 *.png
-!/refsheet/image.png
-!/teacher/teacher.png
 *.rpm
-dist/*
-debhelper-build-stamp
-.debhelper
-*.deb
-*.dsc
-*.build
-*.buildinfo
-*.changes
-*.log
-*.substvars
-/debian/kowalski7cc-backgrounds
-/debian/files
+dist/
 .goutputstream-*
