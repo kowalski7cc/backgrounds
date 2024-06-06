@@ -32,3 +32,5 @@ theme. Pulls in themes for GNOME desktop.
 %{_datadir}/backgrounds/%{bgname}/*
 %dir %{_datadir}/gnome-background-properties/
 %{_datadir}/gnome-background-properties/%{bgname}-*.xml
+dir %{_datadir}/wallpapers/%{Bg_Name}_background_*/
+%{_datadir}/wallpapers/%{Bg_Name}_background_*/*\

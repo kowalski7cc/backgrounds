@@ -1,5 +1,5 @@
 SUBDIRS = teacher refsheet
-VERSION = 4.0.0
+VERSION = 4.1.0
 BASE = kowalski7cc-backgrounds
 NAME =  $(BASE)-$(VERSION)
 BUILDDIR=$(shell rpm --eval '%_topdir')
