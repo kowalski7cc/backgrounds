@@ -34,3 +34,6 @@ theme. Pulls in themes for GNOME desktop.
 %dir %{_datadir}/gnome-background-properties/
 %{_datadir}/gnome-background-properties/%{bgname}-*.xml
 %{_datadir}/wallpapers/%{Bg_Name}_background_*/
+%dir %{_datadir}/xfce4/
+%dir %{_datadir}/xfce4/backdrops/
+%{_datadir}/xfce4/backdrops/%{Bg_Name}_background_*.png

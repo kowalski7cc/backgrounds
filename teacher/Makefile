@@ -40,7 +40,7 @@ install:
 
 	#~ XFCE background
 	$(MKDIR) $(XFCE_BG_DIR)
-	$(INSTALL) $(WP_NAME)-day.png $(XFCE_BG_DIR)/$(WP_NAME).png
+	$(INSTALL) $(WP_NAME)-day.png $(XFCE_BG_DIR)/$(WP_PACKAGE)_background_$(WP_NAME).png
 
 clean:
 	for tod in day night; do \
