@@ -1,0 +1,13 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Puzzoz"
+            }
+        ],
+        "Id": "Refsheet",
+        "License": "CC-BY-SA-4.0",
+        "Name": "Kowalski Dragon Refsheet",
+        "Name[x-test]": "xxKowalski Dragon Refsheetxx"
+    }
+}

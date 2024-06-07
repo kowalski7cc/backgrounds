@@ -4,6 +4,7 @@ WP_DIR=$(DESTDIR)/usr/share/backgrounds/$(WP_PACKAGE)
 GNOME_BG_DIR=$(DESTDIR)/usr/share/gnome-background-properties
 KDE_BG_DIR=$(DESTDIR)/usr/share/wallpapers
 PLASMA_BG_DIR=$(DESTDIR)/usr/share/plasma/desktoptheme
+XFCE_BG_DIR=$(DESTDIR)/usr/share/xfce4/backdrops
 MKDIR=/bin/mkdir -p
 INSTALL=/usr/bin/install -p -m644 -D
 LN_S=/bin/ln -s
@@ -23,11 +24,15 @@ install:
 
 	#~ KDE and Plasma background
 	$(MKDIR) $(KDE_BG_DIR)/$(WP_PACKAGE)_background_$(WP_NAME)/contents/images
-	$(MKDIR) $(KDE_BG_DIR)/$(WP_PACKAGE)_background_$(WP_NAME)/contents/images_dark
-	$(INSTALL) metadata.desktop $(KDE_BG_DIR)/$(WP_PACKAGE)_background_$(WP_NAME)/metadata.desktop
+	$(INSTALL) metadata.json $(KDE_BG_DIR)/$(WP_PACKAGE)_background_$(WP_NAME)/metadata.json
 	for res in 3840x3840; do \
 		$(INSTALL) $(WP_NAME).png \
 	        	$(KDE_BG_DIR)/$(WP_PACKAGE)_background_$(WP_NAME)/contents/images/$${res}.png ; \
 	done;
+
+	#~ XFCE background
+	$(MKDIR) $(XFCE_BG_DIR)
+	$(INSTALL) $(WP_NAME).png $(XFCE_BG_DIR)/$(WP_NAME).png
+
 clean:
 	rm -f $(WP_NAME).png;

@@ -1,6 +1,6 @@
 SUBDIRS = teacher refsheet
 BASE = kowalski7cc-backgrounds
-VERSION = 4.1.0-1
+VERSION = 4.2.0-1
 NAME = $(BASE)-$(VERSION)
 TAR=tar --exclude-vcs --exclude-vcs-ignores --exclude-backups -hcvzf
 RPMBUILD=rpmbuild

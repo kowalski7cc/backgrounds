@@ -1,0 +1,13 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Puzzoz"
+            }
+        ],
+        "Id": "Teacher",
+        "License": "CC-BY-SA-4.0",
+        "Name": "Kowalski Dragon Teacher",
+        "Name[x-test]": "xxKowalski Dragon Teacherxx"
+    }
+}
