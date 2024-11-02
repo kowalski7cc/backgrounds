@@ -1,0 +1,13 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Puzzoz"
+            }
+        ],
+        "Id": "Packaging",
+        "License": "CC-BY-SA-4.0",
+        "Name": "Kowalski Dragon Packaging",
+        "Name[x-test]": "xxKowalski Dragon Packagingxx"
+    }
+}

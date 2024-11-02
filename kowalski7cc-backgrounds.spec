@@ -2,7 +2,7 @@
 %global bgname %(t="%{Bg_Name}";echo ${t,,})
 
 Name:           %{bgname}-backgrounds
-Version:        4.2.0
+Version:        5.0.0
 Release:        1
 Summary:        Kowalski Dragon desktop backgrounds
 
