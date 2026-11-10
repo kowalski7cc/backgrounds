@@ -3,7 +3,7 @@ name: Release wallpaper images
 on:
   push:
     tags:
-      - 'v*'
+      - '*.*.*'
 
 jobs:
   release-wallpapers-images:
