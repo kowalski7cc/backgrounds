@@ -16,24 +16,16 @@ jobs:
           apt-get update
           DEBIAN_FRONTEND=noninteractive apt-get install -y \
             build-essential \
-            ca-certificates \
-            curl \
-            debhelper \
-            dh-python \
+            librsvg2-bin \
+            debhelper-compat
             dpkg-dev \
-            make \
-            pybuild-plugin-pyproject \
-            python3 \
-            python3-gi \
-            python3-shtab \
-            gir1.2-flatpak-1.0 \
-            python3-setuptools
+            make
 
       - name: Check out repository
         uses: actions/checkout@v7.0.1
 
       - name: Build Debian packages
-        run: DEB_BUILD_OPTIONS=nocheck dpkg-buildpackage -us -uc -b
+        run: make deb
 
       - name: Upload packages to Gitea registry
         env:
@@ -43,7 +35,7 @@ jobs:
         run: |
           : "${REGISTRY_TOKEN:?Set the REGISTRY_TOKEN repository or organization secret}"
           for release in trixie forky sid; do
-            for package in ../flatpak-command-exporter_*.deb ../flatpak-command-exporter-gui_*.deb; do
+            for package in *.deb; do
               [ -f "$package" ] || {
                 echo "No Debian package found at $package" >&2
                 exit 1
@@ -68,19 +60,9 @@ jobs:
       - name: Install build dependencies
         run: |
           dnf install -y \
-            flatpak-devel \
-            gettext \
-            git \
-            gtk4 \
-            libadwaita \
             make \
             nodejs \
-            pyproject-rpm-macros \
-            python3-devel \
-            python3-shtab \
-            python3-gobject \
-            python3-pip \
-            python3-setuptools \
+            librsvg2-tools \
             rpm-build
           dnf clean all
 
@@ -117,19 +99,9 @@ jobs:
       - name: Install Arch package build dependencies
         run: |
           pacman -Syu --noconfirm --needed \
-            curl \
-            flatpak \
-            git \
-            gobject-introspection \
-            hicolor-icon-theme \
-            gtk4 \
-            libadwaita \
             nodejs \
-            python \
-            python-gobject \
-            python-pip \
-            python-setuptools \
-            python-shtab
+            librsvg \
+            make
 
       - name: Check out repository
         uses: actions/checkout@v7.0.1

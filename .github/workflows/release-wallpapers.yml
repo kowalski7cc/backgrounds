@@ -1,0 +1,39 @@
+name: Release wallpaper images
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release-wallpapers-images:
+    name: Release wallpaper images
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7.0.1
+
+      - name: Install build dependencies
+        run: |
+          apt-get update
+          DEBIAN_FRONTEND=noninteractive apt-get install -y \
+            gcab \
+            make \
+            librsvg2-bin
+
+      - name: Make wallpaper images
+        run: make
+      
+      - name: Make deskthemepack files
+        run: make deskthemepack
+      
+      - name: Attach wallpaper images to release
+        uses: https://gitea.com/actions/gitea-release-action@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: |
+            theme/*.deskthemepack
+            refsheet/refsheet.png
+            autumn-leafs/autumn-leafs.png
+            packaging/packaging-day.png
+            teacher/teacher-day.png
