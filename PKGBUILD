@@ -1,5 +1,5 @@
 pkgname=kowalski7cc-backgrounds
-pkgver=6.0.0
+pkgver=6.0.1
 pkgrel=1
 pkgdesc="This package contains desktop backgrounds for the Kowalski Dragon theme. Pulls in themes for GNOME desktop."
 arch=('any')

@@ -1,6 +1,6 @@
 SUBDIRS = teacher refsheet packaging autumn-leafs
 BASE = kowalski7cc-backgrounds
-VERSION = 6.0.0-1
+VERSION = 6.0.1-1
 NAME = $(BASE)-$(VERSION)
 TAR=tar --exclude-vcs --exclude-vcs-ignores --exclude-backups -hcvzf
 RPMBUILD=rpmbuild
