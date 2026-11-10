@@ -38,6 +38,9 @@ deb:
 srpm: dist
 	$(RPMBUILD) -ts --clean --rmsource dist/$(NAME)-$(VERSION).tar.xz
 
+pkg:
+	makepkg --force -p PKGBUILD
+
 deskthemepack:
 	@mkdir -p theme/DesktopBackground
 	for i in $(SUBDIRS) ; do \
