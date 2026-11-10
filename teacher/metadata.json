@@ -6,8 +6,8 @@
             }
         ],
         "Id": "Teacher",
-        "License": "CC-BY-SA-4.0",
-        "Name": "Kowalski Dragon Teacher",
-        "Name[x-test]": "xxKowalski Dragon Teacherxx"
+        "License": "CC-BY-NC-ND-4.0",
+        "Name": "Kowalski Dragon - Teacher",
+        "Name[x-test]": "xxKowalski Dragon - Teacherxx"
     }
 }

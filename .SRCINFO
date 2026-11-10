@@ -1,6 +1,6 @@
 pkgbase = kowalski7cc-backgrounds
 	pkgdesc = This package contains desktop backgrounds for the Kowalski Dragon theme. Pulls in themes for GNOME desktop.
-	pkgver = 5.1.1
+	pkgver = 6.0.0
 	pkgrel = 1
 	url = https://github.com/kowalski7cc/backgrounds
 	arch = any

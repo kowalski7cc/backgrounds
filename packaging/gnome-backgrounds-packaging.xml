@@ -2,18 +2,18 @@
 <!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
 <wallpapers>
   <wallpaper deleted="false">
-    <name>Kowalski Dragon Packaging Light</name>
+    <name>Kowalski Dragon - Packaging Light</name>
     <filename>/usr/share/backgrounds/kowalski7cc/packaging/packaging-day.png</filename>
     <options>zoom</options>
   </wallpaper>
   <wallpaper deleted="false">
-    <name>Kowalski Dragon Packaging</name>
+    <name>Kowalski Dragon - Packaging</name>
     <filename>/usr/share/backgrounds/kowalski7cc/packaging/packaging-day.png</filename>
     <filename-dark>/usr/share/backgrounds/kowalski7cc/packaging/packaging-night.png</filename-dark>
     <options>zoom</options>
   </wallpaper>
   <wallpaper deleted="false">
-    <name>Kowalski Dragon Packaging Time of Day</name>
+    <name>Kowalski Dragon - Packaging Time of Day</name>
     <filename>/usr/share/backgrounds/kowalski7cc/packaging/packaging.xml</filename>
     <options>zoom</options>
   </wallpaper>

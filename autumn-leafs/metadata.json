@@ -1,0 +1,13 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Mithmeoi"
+            }
+        ],
+        "Id": "AutumnLeafs",
+        "License": "CC-BY-NC-ND-4.0",
+        "Name": "Kowalski Dragon - Autumn Leafs",
+        "Name[x-test]": "xxKowalski Dragon - Autumn Leafsxx"
+    }
+}

@@ -9,6 +9,13 @@ A set of wallpapers
   - Light/Dark
   - Time of day
 - [Refsheet](refsheet/)
+  - Light
+- [Packaging](packaging/)
+  - Light
+  - Light/Dark
+  - Time of day
+- [Autumn Leafs](autumn-leafs/)
+  - Light
 
 ## Building
 

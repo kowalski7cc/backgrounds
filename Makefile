@@ -1,6 +1,6 @@
-SUBDIRS = teacher refsheet packaging
+SUBDIRS = teacher refsheet packaging autumn-leafs
 BASE = kowalski7cc-backgrounds
-VERSION = 5.0.0-1
+VERSION = 6.0.0-1
 NAME = $(BASE)-$(VERSION)
 TAR=tar --exclude-vcs --exclude-vcs-ignores --exclude-backups -hcvzf
 RPMBUILD=rpmbuild
@@ -33,7 +33,7 @@ rpm:
 	$(RPMBUILD) -bb --build-in-place -D "_rpmdir ${PWD}/dist" ${BASE}.spec
 
 deb:
-	dpkg-buildpackage -A -rfakeroot
+	dpkg-buildpackage -us -uc -b
 
 srpm: dist
 	$(RPMBUILD) -ts --clean --rmsource dist/$(NAME)-$(VERSION).tar.xz
