@@ -33,7 +33,7 @@ jobs:
         with:
           files: |
             theme/*.deskthemepack
-            refsheet/refsheet.png
-            autumn-leafs/autumn-leafs.png
-            packaging/packaging-day.png
-            teacher/teacher-day.png
+            refsheet/*.png
+            autumn-leafs/*.png
+            packaging/*.png
+            teacher/*.png
