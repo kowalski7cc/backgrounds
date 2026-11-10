@@ -3,7 +3,7 @@
 
 Name:           %{bgname}-backgrounds
 Version:        6.0.1
-Release:        1
+Release:        1%{?dist}
 Summary:        Kowalski Dragon desktop backgrounds
 
 License:        CC-BY-SA-4.0
